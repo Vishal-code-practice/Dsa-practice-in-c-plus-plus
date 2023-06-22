@@ -1,1 +1,25 @@
 
+#include<iostream>  
+using  namespace std;  
+int main()  
+{  
+    int i,n,res;
+    cin>>n;
+    int b = n;
+    i = 0;
+    res = 0;
+    while(n!=0){
+        int rem;
+        rem = n%10;
+        res = res*10+ rem;
+        n=n/10;
+    }
+    int a = res;
+    
+    if(a==b){
+        cout<<"true";
+    }
+    else{
+        cout<<"false";
+    }
+}   
