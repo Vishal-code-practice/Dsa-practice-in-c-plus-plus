@@ -1,0 +1,23 @@
+//Reverse of a number
+
+
+
+#include<iostream>  
+using  namespace std;  
+int main()  
+{  
+    int i,n,res;
+    cin>>n;
+    string str = to_string(n);
+    int val = str.length();
+    i = 0;
+    res = 0;
+    while(n!=0){
+        int rem;
+        
+        rem = n%10;
+        res = res*10+ rem;
+        n=n/10;
+    }
+    cout<<res<<endl;
+}   
